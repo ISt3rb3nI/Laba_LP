@@ -22,20 +22,20 @@
         <header>
 
             <!-- Меню страницы -->
-            <nav>
+            <nav id="myTopnav">
                 <img src="img/icons/fort-icon.png" alt="Логотип сайта">
-                <ul>
+                <ul  class="menu">
                     <li>
-                        <a href="#" title="На главную" target="_blank">Главная</a>
+                        <a href="#top" class="menu-element" data-link="top" title="На главную">Главная</a>
                     </li>
                     <li>
-                        <a href="#" title="Общее" target="_blank">Общее</a>
+                        <a href="#services" class="menu-element" data-link="services" title="Общее">Общее</a>
                     </li>
                     <li>
-                        <a href="#" title="В галерею" target="_blank">Галерея</a>
+                        <a href="#portfolio" class="menu-element" data-link="portfolio" title="В галерею">Галерея</a>
                     </li>
                     <li>
-                        <a href="#" title="К контактам" target="_blank">Контакты</a>
+                        <a href="#contact" class="menu-element" data-link="contact" title="К контактам">Контакты</a>
                     </li>
                 </ul>
                 <div id="hamburger" class="icon">&#9776;</div>
@@ -47,12 +47,13 @@
         <!-- Основной контент -->
         <main>
 
-            <section>
+
+            <section id="top">
                 <img class="top-image"  src="img/backgrounds/01.jpg" alt="Обложка сайта">
             </section>
 
 
-            <section class="services">
+            <section class="services" id="services">
                 <h1 class="main-title">Наши возможности</h1>
                 <div class="delimeter"></div>
                 <p class="main-title-description">Lorem ipsum dolor sit amet</p>
@@ -98,7 +99,7 @@
             </section>
 
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h1 class="main-title">Наши возможности</h1>
                 <div class="delimeter"></div>
                 <p class="main-title-description">Lorem ipsum dolor sit amet</p>
@@ -144,11 +145,70 @@
             </section>
 
 
+            <section class="contact" id="contact">
+                <h1 class="main-title">Контактная форма</h1>
+                <div class="delimeter"></div>
+                <p class="main-title-description">С радостью ответим на любой ваш вопрос</p>
+
+                <form id="contactform" method="post" action="contact.php" class="contact-form">
+                    <input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+                    <input name="email" type="email" class="col" placeholder="E-mail адрес *" required>
+                    <input name="theme" type="text" class="col" placeholder="Тема сообщения *">
+                    <input name="phone" type="tel" class="col" placeholder="Номер телефона *">
+                    <textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+                    <input type="submit" id="sumbit" class="sumbit btn" value="Отправить сообщение">
+                </form>
+            </section>
+
+
         </main>
 
 
         <!-- Подвал страницы -->
-        <footer>footer</footer>
+        <footer>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#top" class="menu-element" data-link="top" title="На главную">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="menu-element" data-link="services" title="Общее">Общее</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="menu-element" data-link="portfolio" title="В галерею">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="menu-element" data-link="contact" title="К контактам">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="brand">
+                <img src="img/icons/fort-icon.png" alt="Логотип сайта">
+                <span>AWESOME</span>
+            </div>
+
+            <div class="social">
+                <a href="#" title="Facebook" target="_blank">
+                    <img class="social-img" src="img/icons/001-facebook.png" alt="Facebook">
+                </a>
+                <a href="#" title="LinkedIn" target="_blank">
+                    <img class="social-img" src="img/icons/004-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" title="Instagram" target="_blank">
+                    <img class="social-img" src="img/icons/005-instagram.png" alt="Instagram">
+                </a>
+                <a href="#" title="Twitter" target="_blank">
+                    <img class="social-img" src="img/icons/007-twitter.png" alt="Twitter">
+                </a>
+                <a href="#" title="Tumblr" target="_blank">
+                    <img class="social-img" src="img/icons/010-tumblr.png" alt="Tumblr">
+                </a>
+            </div>
+
+            <div class="copyright">© Very First Page 2020</div>
+
+        </footer>
 
     </body>
 </html>
