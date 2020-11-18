@@ -161,6 +161,7 @@ li {
 .portfolio-item:hover .description-container {
     opacity: 0.8;
     height: 100%;
+    cursor: pointer;
 }
 
 .portfolio-title,
@@ -277,6 +278,35 @@ footer ul {
     margin-top: 10px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5)
+}
+
+/* popup */
+.popup-container {
+    position: fixed;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0);
+    top: 0;
+    right: 0;
+    bottom: -1500px;;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease;
+}
+
+.popup-container.ready {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+}
+
+.popup-img {
+    background: white;
+    border-radius: 10px;
+    padding: 15px 15px 35px;
+    max-width: 75%;
+    box-shadow: 0 0 0px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 
